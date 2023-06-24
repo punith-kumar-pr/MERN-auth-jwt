@@ -13,18 +13,18 @@ function App() {
   async function registerUser(event) {
     event.preventDefault()
 
-    const response = await axios.post('http://localhost:1337/api/register',{
-      // method: 'POST',
-      // headers : {
-      //   'Content-Type': 'application/json',
-      // },
-      // body : JSON.stringify({
+    const response = await fetch('http://localhost:1337/api/register',{
+      method: 'POST',
+      headers : {
+        'Content-Type': 'application/json',
+      },
+      body : JSON.stringify({
         name, email, password,  
-      // }),
+      }),
     })
     
-    // const data = await response.json()
-    const data = await response.data
+    const data = await response.json()
+    // const data = await response.data
     
     if(data.status === 'ok') {
       navigate('/login')
