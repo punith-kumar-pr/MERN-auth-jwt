@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div>
-      <h1>Register</h1>
+      <h1>Login</h1>
       <form onSubmit={loginUser}>
       
       <input 
@@ -56,7 +56,7 @@ function App() {
         placeholder = "Password"
       />
       <br />
-      <input type="submit" value="Register" />
+      <input type="submit" value="Login" />
       </form>
       
     </div>
