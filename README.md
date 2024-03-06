@@ -23,19 +23,21 @@ This is a simple web application built using the MERN (MongoDB, Express.js, Reac
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/punith-kumar-pr/MERN-auth-jwt.git 
+   git clone https://github.com/punith-kumar-pr/MERN-auth-jwt.git
+   ``` 
 
 2. Navigate to the project directory:
 
     ```bash
     cd MERN-jwt-auth
+    ```
    
 3. Install dependencies for both the server and client:
 
-    ```bash
+   ```bash
    cd server && npm install
-
-    cd ../client && npm install
+   cd ../client && npm install
+   ```
 
 4. Set up environment variables and other variables:
 
@@ -43,14 +45,17 @@ This is a simple web application built using the MERN (MongoDB, Express.js, Reac
     PORT=3001
     DB_URI=your_mongodb_connection_string
     JWT_SECRET=your_jwt_secret
+    ```
 
 5. Start the server:
     ```bash
    cd ../server && npm start
+    ```
 
 6. Start the client:
     ```bash
    cd ../client && npm run start
+    ```
 
 7. Open your browser and navigate to http://localhost:3000 to access the application.
 
